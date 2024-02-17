@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 60%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 3rem;
+}
+
+.container > h1{
+  text-align: center;
+  color: black;
+}
+
+.todo-form{
+  display: flex;
+  margin: 1rem 0;
+
+}
+
+.todo-form > input{
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.todo-form > button{
+  border: none;
+  outline: none;
+  background-color: green;
+  width: 10%;
+  font-size: large;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.todo-form > button:hover{
+  background-color: rgb(3, 156, 3);
+}
+
+.todo-item{
+  display: flex;
+  background-color: #fff;
+  padding: 0 0 0 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+
+}
+
+.todo-item input{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: large;
+  padding: 1rem;
+}
+
+.todo-item > #text-input{
+  width: 80%;
+
+}
+
+.todo-item > #check-input{
+  cursor: pointer;
+
+}
+
+
+.todo-item  button{
+  border: none;
+  outline: none;
+  font-size: large;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.todo-item > #update-button{
+  width: 10%;
+  background-color: blue;
+
+}
+
+.todo-item > #delete-button{
+  width: 10%;
+  background-color: red;
+
+}
+
+.todo-item > #update-button:hover{
+  background-color: rgb(87, 87, 209);
+}
+
+.todo-item > #delete-button:hover{
+  background-color: rgb(221, 90, 90);
+}
+
+.completed{
+  text-decoration: line-through;
+  background-color: skyblue;
+}
+
+@media (max-width: 850px) {
+  .container{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container button{
+    font-size: 12px;
+  }
+  
+}
+
